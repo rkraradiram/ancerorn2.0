@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #79984c;
+}
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.main {
+  background-image: url("../images/focus-main.jpg");
+  background-size: cover;
+  background-color: rgba(33, 46, 142, 0.6);
+  background-blend-mode: multiply;
+}
+.showcase_card_header {
+  color: #305990;
+}
+.limit {
+  max-width: 450px;
+  max-height: 1000px;
+}
+.bullet {
+  list-style-type: none;
+  text-align: left;
+}
+.data {
+  text-align: left;
+  color: black;
+}
+.dot {
+  height: 8px;
+  width: 12px;
+  background-color: #305990;
+  border-radius: 40%;
+  margin-left: -4px;
+  display: inline-block;
+}
+.def {
+  color: #305990;
+  text-align: left;
+  text-decoration: bold;
+}
+.keypoint {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  background-color: #82bc50;
+}
+.highlightbox {
+  text-align: center;
+  font-size: small;
+  color: white;
+  margin-top: 5px;
+  min-width: 140px;
+  background-color: #82bc50;
+}
+.line {
+  display: inline-block;
+  width: 100%;
+  border-top: 2px solid #305990;
+}
+.showcase_card_chat {
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  background-color: #305990;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0rem;
+}
+.arrow-down {
+  width: 0;
+  border-left: 1px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #305990;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  transition: 0.5s;
+}
+footer {
+  background-color: #79984c;
+}
+
+.navbar-links li:hover {
+  background-color: #305b9a;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.hero {
+  background-image: url("../images/products.jpg");
+  height: 350px;
+  background-color: rgba(3, 21, 161, 0.5);
+  background-blend-mode: multiply;
+  text-align: center;
+}
+section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+#section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.second a,
+.second a:hover {
+  background-color: #79984c;
+  color: white;
+}
+.second {
+  background-color: #537ebf;
+}
+
+.main img {
+  height: 330px;
+  width: 380px;
+}
+.diabetology a {
+  color: black;
+}
+.CARDIOLOGY a {
+  color: black;
+}
+.thrombosis a {
+  color: black;
+}
+
+section h1 {
+  color: white;
+}
+section p {
+  color: rgb(181, 178, 178);
+}
+section a,
+section a:hover {
+  text-decoration: none;
+  color: white;
+}
+.diabetology,
+.CARDIOLOGY,
+.thrombosis {
+  background-color: #305990;
+}
+.second {
+  background-color: #537ebf;
+}
+
+@media (max-width: 995px) {
+  .flexyflex {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .main {
+    display: flex;
+    margin-left: 300px;
+  }
+  .mission {
+    min-width: 300px;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
